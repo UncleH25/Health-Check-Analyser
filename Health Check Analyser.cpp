@@ -12,15 +12,15 @@ int main()
 	char gender;
 
 	//Input
-	cout << "Enter your age: ";
+	cout << "Enter your age: \n";
 	cin >> age;
-	cout << "Enter your temperature (°C): ";
+	cout << "Enter your temperature (in Celsius): \n";
 	cin >> temperature;
 
 	//Clear the input buffer
 	cin.ignore();
 
-	cout << "Enter your gender (M/F): ";
+	cout << "Enter your gender (M/F): \n";
 	cin.get(gender);
 
 	//Const bools for fever and age
