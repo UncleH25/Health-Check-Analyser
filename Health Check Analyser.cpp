@@ -26,4 +26,31 @@ int main()
 	//Const bools for fever and age
 	const bool hasFever = temperature >= 38.00;
 	const bool isMinor = age < 18;
+
+	//Check if the user is a minor and has a fever
+	if (age == isMinor)
+	{
+		if (temperature == hasFever)
+		{
+			cout << "You are a minor and have a fever. Please consult a doctor." << endl;
+		}
+		else
+		{
+			cout << "You are a minor and do not have a fever. You are healthy." << endl;
+		}
+	}
+	else if (age != isMinor && temperature == hasFever)
+	{
+		cout << "You are an adult and have a fever. Please consult a doctor." << endl;
+	}
+	else if (age != isMinor && temperature != hasFever)
+	{
+		cout << "You are an adult and do not have a fever. You are healthy." << endl;
+	}
+	else
+	{
+		cout << "Invalid input. Please try again." << endl;
+	}
+
+	return 0;
 }
